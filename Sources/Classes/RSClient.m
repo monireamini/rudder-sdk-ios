@@ -532,6 +532,10 @@ static NSString* _advertisingId = nil;
     return (_repository != nil) ? [_repository getSessionId] : nil;
 }
 
+- (NSNumber * _Nullable)getSessionId {
+    return self.sessionId;
+}
+
 - (void) onIntegrationReady:(id<RSIntegrationFactory>)factory withCallback:(Callback)callback {
     if ([RSClient getOptStatus]) {
         return;

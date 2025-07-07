@@ -85,6 +85,7 @@ typedef void (^Callback)(NSObject *_Nullable);
 - (void)startSession;
 - (void)startSession:(long)sessionId;
 - (void)endSession;
+- (NSNumber * _Nullable)getSessionId;
 
 - (NSString* _Nullable)getAnonymousId __attribute((deprecated("This method will be deprecated soon. Use instance property(anonymousId) instead.")));
 - (RSConfig* _Nullable)configuration __attribute((deprecated("This method will be deprecated soon. Use instance property(config) instead.")));
